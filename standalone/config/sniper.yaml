@@ -1,0 +1,67 @@
+camera:
+  exposure_time: 15000.0
+  gain: 10.0
+  gamma: 1.25
+  saturation: 36
+  contrast: 0.90
+  fake: false
+
+encoder:
+  crop_size: 800
+  output_size: 300
+  output_fps: 30
+  target_bitrate: 110
+  x264_preset: "veryslow"
+  intra_only: false
+  keyframe_interval: 30
+  h264_slices: 4
+  slice_max_bytes: 600
+  static_simplify: true
+  motion_threshold: 20
+  motion_erode_px: 2
+  motion_dilate_px: 1
+  motion_trail_frames: 4
+  trail_disable_motion_ratio: 0.06
+  bg_update_alpha: 0.006
+  bg_blur_sigma: 1.2
+  center_clear_size: 123
+  center_smooth_sigma: 0.0
+  center_color_gate: false
+  center_color_min_saturation: 78
+  center_color_min_value: 50
+  center_color_red_min_saturation: 78
+  center_color_green_min_saturation: 78
+  center_color_blue_min_saturation: 78
+  center_color_morph_px: 0
+  center_color_temporal_window: 2
+  center_color_persist_frames: 2
+  motion_adaptive_smooth_enable: false
+  motion_adaptive_smooth_sigma: 1.5
+  motion_adaptive_ratio_threshold: 0.10
+  force_monochrome: false
+
+serial:
+  port: "/dev/serial/by-id/usb-YueLuEmbedded_Vision_Comm_port_2078376B5948-if00"
+  baud_rate: 921600
+  flush_interval_ms: 20
+  reconnect_interval_ms: 1000
+  max_backlog_bytes: 6000
+  fake: false
+  transport_mode: "raw_h264"
+
+bandwidth:
+  limit_kbytes_per_s: 15.0
+  window_s: 2.0
+  max_tx_delay_s: 0.45
+
+display:
+  enable: true
+
+debug:
+  dump_enable: false
+  dump_every_n_frames: 1
+  dump_dir: "sniper_debug_imgs"
+  dump_save_raw: false
+  dump_save_roi: true
+  dump_save_static: false
+  dump_save_final: true

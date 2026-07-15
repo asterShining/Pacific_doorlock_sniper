@@ -1,0 +1,4 @@
+av
+opencv-python
+pyserial
+paho-mqtt

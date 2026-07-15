@@ -1,0 +1,42 @@
+# Build artifacts
+build/
+build-real/
+build-*/
+cmake-build-*/
+*.o
+*.a
+
+# IDE / editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+
+# Claude / OMC
+.omc/
+.codex
+.omx/
+.omg/
+CLAUDE.md
+
+# Debug output
+sniper_debug_imgs/
+
+# Galaxy SDK — only ship inc/, lib/*.so, lib/*.cti, config/
+Galaxy_camera/bin/
+Galaxy_camera/doc/
+Galaxy_camera/sample/
+Galaxy_camera/License/
+Galaxy_camera/ReleaseNote.txt
+Galaxy_camera/lib/x86_64/*.cache
+Galaxy_camera/lib/x86_64/net6.0/
