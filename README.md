@@ -1,6 +1,14 @@
 # Pacific Doorlock Sniper
 
-> 本项目基于 [wele0612/Pacific_doorlock_sniper](https://github.com/wele0612/Pacific_doorlock_sniper) 修改。
+单进程 3 线程视频采集编码传输系统，C++17 + CMake，无 ROS2 依赖。
+
+---
+
+## 致谢 & 原项目声明
+
+本项目基于 **五大湖联合大学** 的开源项目 [wele0612/Pacific_doorlock_sniper](https://github.com/wele0612/Pacific_doorlock_sniper) 修改，特此感谢！
+
+原项目 README 副本见 [NOTICE](./NOTICE.md)。
 
 单进程 3 线程视频采集编码传输系统，C++17 + CMake，无 ROS2 依赖。
 
